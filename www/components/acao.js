@@ -23,3 +23,12 @@ imagem.style.filter = `contrast(${contraste}%)`;
 
 });
 
+$(document).on("change","#sat",function(){
+var imagem = window.document.getElementById('image');
+var nm = window.document.getElementById('sat');
+var satu = Number(nm.value);
+alert(satu);
+imagem.style.filter = `saturate(${satu}%)`;
+
+});
+
