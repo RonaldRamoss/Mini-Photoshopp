@@ -18,7 +18,6 @@ $(document).on("change","#cont",function(){
 var imagem = window.document.getElementById('image');
 var con = window.document.getElementById('cont');
 var contraste = Number(con.value);
-alert(contraste);
 imagem.style.filter = `contrast(${contraste}%)`; 
 
 });
@@ -27,8 +26,15 @@ $(document).on("change","#sat",function(){
 var imagem = window.document.getElementById('image');
 var nm = window.document.getElementById('sat');
 var satu = Number(nm.value);
-alert(satu);
 imagem.style.filter = `saturate(${satu}%)`;
+
+});
+
+$(document).on("change","#gy",function(){
+var vagy = window.document.getElementById('gy');
+var vaec = Number(vagy.value);
+var imagem = window.document.getElementById('image');
+image.style.filter = `grayscale(${vaec}%)`;
 
 });
 
