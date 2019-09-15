@@ -34,7 +34,15 @@ $(document).on("change","#gy",function(){
 var vagy = window.document.getElementById('gy');
 var vaec = Number(vagy.value);
 var imagem = window.document.getElementById('image');
-image.style.filter = `grayscale(${vaec}%)`;
+imagem.style.filter = `grayscale(${vaec}%)`;
+});
+
+$(document).on("change","#bl",function(){
+var imagem = window.document.getElementById('image');
+var blsc = window.document.getElementById('bl');
+var blnm = Number(blsc.value);
+alert(blnm);
+imagem.style.filter = `blur(${blnm}px)`;
 
 });
 
